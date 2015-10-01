@@ -19,6 +19,8 @@ RUN docker-php-ext-install mysqli
 RUN docker-php-ext-install xml
 RUN docker-php-ext-install xmlrpc
 RUN docker-php-ext-install zip
+RUN docker-php-ext-install mbstring
+RUN docker-php-ext-install xdebug
 
 # install memcache
 RUN pecl config-set php_ini /usr/local/etc/php/php.ini
